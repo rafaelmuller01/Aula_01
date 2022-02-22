@@ -2,13 +2,20 @@ package aulaJava;
 
 public class Conta {
 	
-	int numero;
-	float saldo;
+	public float numero;
+	public float saldo;
+	public int debito = 100;
+	public int creditado = 1000;
 	
-	public static void main(String[] args) {
-		
-		Conta conta1 = new Conta();
-		conta1.numero = 1521;
-		conta1.saldo = (float)750.63;
+	public String retornaConta() {
+		return ("numero: " + this.numero + " saldo: " + this.saldo);
+	}
+	
+	public float debitaSaldo() {
+		return (saldo - debito);
+	}
+	
+	public float creditaSaldo() {
+		return (saldo - creditado);
 	}
 }
