@@ -22,6 +22,9 @@ public class principalTRAB {
 		}else {
 			System.out.println("Saldo não atualizado. Não pode ser negativo");
 		}
+		
+		
+		System.out.println(conta1.retornaConta());
 	}
 
 }

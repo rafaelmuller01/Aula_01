@@ -12,12 +12,11 @@ public class Conta {
 	public Conta(float numero, float saldo) {
 		this.numero = numero;
 		this.saldo = saldo;
-		this.debito = debito;
-		this.creditado = creditado;
+
 	}
 
 	public String retornaConta() {
-		return ("numero: " + this.numero + " saldo: " + this.saldo);
+		return ("numero da conta: " + this.numero + " saldo da conta: " + this.saldo);
 	}
 
 	public float getNumero() {
@@ -34,6 +33,7 @@ public class Conta {
 
 	public boolean setSaldo(float saldo) {
 		if (saldo >= 0) {
+			this.saldo = saldo;
 			return true;
 			} else { 
 				return false;

@@ -10,7 +10,6 @@ public static void main(String[] args) {
 		int anoNascimento;
 		String email;
 		
-		
 		Scanner ler = new Scanner(System.in);
 		
 		System.out.println("Digite seu CPF:");
@@ -28,7 +27,8 @@ public static void main(String[] args) {
 	
 		Cliente cliente1 = new Cliente(cpf, anoNascimento, nome, email);
 		
-		
+		System.out.println(cliente1.retornaCliente());
+				
 		float numero;
 		float saldo;
 		
@@ -39,7 +39,6 @@ public static void main(String[] args) {
 		saldo = ler.nextFloat();
 		
 		Cliente conta1 = new Cliente(cpf, anoNascimento, nome, email);
-		
 		
 	}
 }
