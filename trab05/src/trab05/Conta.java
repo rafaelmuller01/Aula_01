@@ -4,7 +4,9 @@ public class Conta {
 	
 	public float numero;
 	public float saldo;
-	public boolean debito;
+	
+	
+	
 	
 	public boolean debitaSaldo(float debito) {
 		if (debito < this.saldo) {
